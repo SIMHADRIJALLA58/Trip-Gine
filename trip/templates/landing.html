@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day01</title>
+    <style>
+  @font-face {
+  font-family: Chana;
+  src: url(/static/css/chaney-ultraextended-webfont.ttf);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+}
+body{
+width: 100%;
+height: 100%;
+cursor: url("/static/img/aaa.png"), auto;
+}
+#main{
+  width: 100%;
+  min-height: 100vh;
+}
+
+.loader {
+position: absolute;
+width: 100%;
+height: 100vh;
+background-color: #3074b5;
+animation: pulse 3s;
+z-index: 9;
+}
+
+.zoom {
+position: absolute;
+top: 45%;
+left: 50%;
+font-size: 11vw;
+-webkit-text-stroke-width: 0.3vh;
+-webkit-text-fill-color: transparent;
+-webkit-text-stroke-color:beige;
+outline: none;
+transform: rotate(0deg) translate(-50%, -50%);
+opacity: 0.6;
+font-family: chana;
+  /* font-family: ProductSans; */
+font-weight: 200;
+}
+
+.loader h1 {
+position: absolute;
+top: 45%;
+left: 50%;  
+transform: rotate(0deg) translate(-50%, -50%);
+/* outline: 1px solid #fff; */
+font-family:chana;
+font-size: 5vw;
+padding: 2vw;
+/* transform: rotate(-5deg) ; */
+color: black;
+}
+
+.Loading {
+top: 55%;
+left: 50%;
+transform: rotate(0deg) translate(-50%, 0%);
+position: relative;
+display: inline-block;
+width: 50%;
+height: 10px;
+background: #f1f1f1;
+/* box-shadow: inset 0 0 5px rgba(0, 0, 0, .2); */
+border-radius: 4px;
+overflow: hidden;
+}
+
+.homeButton{
+top: 60%;
+left: 50%;
+transform: rotate(0deg) translate(-50%, 0%);
+position: absolute;
+display: inline-block;
+width: 500px;
+height: 50px;
+font-size: 20px;
+border-radius: 5px;
+background: white;
+color: black;
+border:2px white;
+outline: none;
+transition: 0.4s;
+}
+
+.homeButton:hover{
+box-shadow: 0px 0px 5px white,
+0px 0px 30px white,
+0px 0px 90px white;
+}
+.Loading:after {
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  /* width: 100%; */
+  height: 100%;
+  border-radius: 4px;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, .2); */
+  animation: load 3s;
+}
+
+
+@keyframes load {
+0% {
+  width: 0;
+  background: #3074b5;
+}
+
+25% {
+  width: 25%;
+  background: #3074b5;
+}
+
+50% {
+  width: 50%;
+  background: #3074b5;
+}
+
+75% {
+  width: 75%;
+  background: #3074b5;
+}
+
+100% {
+  width: 100%;
+  background: #3074b5;
+}
+}
+    </style>
+
+  </head>
+  <body>
+    <div id="main">
+      <div class="loader">
+        <h2 class="zoom">TripGENIE</h2>
+        <h1 class="scramble">TRIP_GENIE</h1>
+        <div class="Loading"></div>
+        <a href="/signup.html"><button class="homeButton" style="font-family: chana;">Click here for Login page</button></a>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/static/js/descrambler.js"></script>
+    <script src="/static/js/script.js"></script>
+  </body>
+</html>

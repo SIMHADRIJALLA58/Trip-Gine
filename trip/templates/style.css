@@ -1,0 +1,268 @@
+@font-face {
+    font-family: Chana;
+    src: url(chaney-ultraextended-webfont.ttf);
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color:green;
+
+
+}
+
+#main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.loader {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #BAB86C;
+  animation: pulse 3s;
+  z-index: 9;
+}
+
+.zoom {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  font-size: 11vw;
+  -webkit-text-stroke-width: 0.3vh;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color:beige;
+  outline: none;
+  transform: rotate(0deg) translate(-50%, -50%);
+  opacity: 0.6;
+  font-family: chana;
+    /* font-family: ProductSans; */
+  font-weight: 200;
+}
+
+.loader h1 {
+  position: absolute;
+  top: 45%;
+  left: 50%;  
+  transform: rotate(0deg) translate(-50%, -50%);
+  /* outline: 1px solid #fff; */
+  font-family:chana;
+  font-size: 5vw;
+  padding: 2vw;
+  /* transform: rotate(-5deg) ; */
+  color: black;
+}
+
+.Loading {
+  top: 55%;
+  left: 50%;
+  transform: rotate(0deg) translate(-50%, 0%);
+  position: relative;
+  display: inline-block;
+  width: 50%;
+  height: 10px;
+  background: #f1f1f1;
+  /* box-shadow: inset 0 0 5px rgba(0, 0, 0, .2); */
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.homeButton{
+  top: 60%;
+  left: 50%;
+  transform: rotate(0deg) translate(-50%, 0%);
+  position: absolute;
+  display: inline-block;
+  width: 350px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 5px;
+  background: #BAB87D;
+  color: black;
+  border:2px white;
+  outline: none;
+  transition: 0.4s;
+}
+
+.homeButton:hover{
+  box-shadow: 0px 0px 5px #ee65e5,
+  0px 0px 30px #ee65e5,
+  0px 0px 90px #ee65e5;
+}
+.Loading:after {
+    content: "";
+    position: absolute;
+    bottom: 10%;
+    /* width: 100%; */
+    height: 100%;
+    border-radius: 4px;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, .2); */
+    animation: load 3s;
+ }
+  
+
+@keyframes load {
+  0% {
+    width: 0;
+    background: #BAB86C;
+  }
+
+  25% {
+    width: 25%;
+    background: #BAB86C;
+  }
+
+  50% {
+    width: 50%;
+    background: #BAB86C;
+  }
+
+  75% {
+    width: 75%;
+    background: #BAB86C;
+  }
+
+  100% {
+    width: 100%;
+    background: #BAB86C;
+  }
+}
+
+/* Login page */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap');
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+}
+/* 
+.video{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	padding: 0px;
+	margin: 0px;
+	opacity: 0.3;
+} */
+
+
+.background{
+	background-image: url("/static/img/3.jpg");
+	width: 100%;
+	height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.login{
+	width: 100%;
+	height: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-form{
+	width: 400px;
+	padding: 20px;
+	background: color(srgb red green blue);
+	text-align: center;
+	padding-left:20px;
+	padding-right: 20px;
+	margin-top: 50px;
+	border-radius: 10px;
+	z-index: 999;
+	opacity: 1.81;
+	backdrop-filter: blur(10px);
+	border: 1px solid white;
+}
+
+input{
+	outline: none;
+	border: none;
+	width: 100%;
+	font-size: 16px;
+	padding: 10px 10px;
+	background: none;
+	border: 2px solid white;
+	border-radius: 8px;
+}
+
+h1{
+	padding-bottom: 40px;
+	color: white;
+}
+
+input::placeholder{
+	color: white;
+	font-size: 16px;
+}
+
+button{
+	background: none;
+	outline : none;
+	background: #da2859;
+	padding: 10px 40px;
+	font-size: 17px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+button:hover{
+	background: #f1a6bc;
+}
+
+@media(max-width: 600px) {
+  
+.video{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100vh;
+	object-fit: cover;
+	padding: 0px;
+	margin: 0px;
+	opacity: 0.3;
+}
+
+.background{
+	background-image: url("/static/img/3.jpg");
+	width: 100%;
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+}
+
+.login-form{
+	width: 90%;
+	padding: 10%;
+	background: white;
+	text-align: center;
+	padding-left:10%;
+	padding-right: 10%;
+	margin-top: 70px;
+	border-radius: 10px;
+}
+}
+form ::placeholder{
+  color: #da2859;
+}
