@@ -1,4 +1,4 @@
-Trip Gine
+Trip Gine:
 Trip Gine is an interactive web application that helps users plan and organize their trips efficiently. Users can explore destinations, create detailed itineraries, and manage their travel plans in a simple, intuitive interface
 
 Features:
@@ -32,17 +32,6 @@ Usage:
 3.	Manage Itinerary: Edit or delete trip plans anytime.
 4.	Explore Destinations: Search and explore new destinations for future trips.
 
-
  
 
-
-
-
-
-
-
-Login page:
- 
-
-Main page:
  
